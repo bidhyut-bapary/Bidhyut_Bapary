@@ -106,7 +106,7 @@ body {
 
 .circle:nth-child(2) {
   width: 20rem;
-  background-image: url('images/photo1.png');
+  background-image: url('/images/photo1.png');
   background-size: cover;
   background-repeat: no-repeat;
   border: 0.1rem solid white;
@@ -509,5 +509,6 @@ hr.bh {
     padding: 15px 0;
   }
 }
+
 
 
