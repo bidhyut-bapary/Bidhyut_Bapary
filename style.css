@@ -180,7 +180,23 @@ body {
   left: 75%;
   transform: translate(-50%, -50%);
 }
-
+.circle {
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  overflow: hidden; /* যাতে ছবিটা গোলাকার থাকে */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .circle:nth-child(1) {
   background: linear-gradient(90deg, transparent 50%, transparent 50%);
   width: 25rem;
@@ -188,9 +204,6 @@ body {
 
 .circle:nth-child(2) {
   width: 20rem;
-  background-image: url('./images/photo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
   border: 0.1rem solid white;
   animation: pulseGlow 3s ease-in-out infinite;
   box-shadow:
@@ -1078,5 +1091,6 @@ hr.bh {
     opacity: 1;
   }
 }
+
 
 
