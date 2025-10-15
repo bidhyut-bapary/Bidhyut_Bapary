@@ -90,6 +90,8 @@ body {
 .menu-toggle {
   display: none;
   font-size: 28px;
+  align-items: center;
+  gap: 1rem; /* icon-এর মধ্যে দূরত্ব */
   color: #0ef;
   cursor: pointer;
   z-index: 101;
@@ -814,6 +816,7 @@ hr.bh {
   }
 
   .btn {
+    display: none;
     font-size: 14px;
     padding: 10px 20px;
     margin-top: 20px;
@@ -902,9 +905,25 @@ hr.bh {
   }
 
 .menu-toggle {
-    display: block;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #0ef;
+  cursor: pointer;
+  z-index: 101;
+  justify-content: center;
+  gap: 2rem;
   }
-
+  .download-icon:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.download-icon{
+  margin-left: 300px;
+  color: #0ef;
+  align-items: center;
+}
   .navbar {
     position: absolute;
     top: 70px;
@@ -1063,7 +1082,13 @@ hr.bh {
 .menu-toggle {
     display: block;
   }
-
+.download-icon {
+    display: inline-block; /* Show only on mobile */
+  }
+.download-icon  {
+    flex-direction: column;
+    gap: 1rem;
+  }
   .navbar {
     position: absolute;
     top: 70px;
