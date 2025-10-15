@@ -108,3 +108,20 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.toggle("active");
   });
 });
+document.getElementById("downloadCV").addEventListener("click", function () {
+    // নিচের লিংকে তোমার GitHub ফাইল লিংক বসাও
+    const fileUrl = "https://drive.google.com/file/d/1VE0nrbtJScFXTmqL4rgFdc06UEHKZIcY/view?usp=sharing";
+    const fileName = "Bidhyut_Bapary.pdf";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+  document.getElementById("downloadCV").addEventListener("click", function () {
+  const fileUrl = "hhttps://drive.google.com/uc?export=download&id=1AbCdEfGhIjKlmNOP";
+  window.open(fileUrl, "_blank");
+});
