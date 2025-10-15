@@ -147,29 +147,26 @@ body {
 
 /* Buttons */
 .btn {
-  display: inline-block;
-  padding: 12px 28px;
-  background: #0ef;
-  border-radius: 40px;
-  font-size: 16px;
+  background: linear-gradient(90deg, #00eeff, #0077ff);
   color: #081b29;
-  letter-spacing: 1px;
-  text-decoration: none;
+  font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0, 238, 255, 0.3);
-  animation: slideTop 0.5s ease forwards;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 25px;
+  cursor: pointer;
   transition: all 0.3s ease;
-  opacity: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn:hover {
-  background: #00bcd4;
+  background: linear-gradient(90deg, #0077ff, #00eeff);
   color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 238, 255, 0.6);
+  box-shadow: 0 0 10px #00eeff;
 }
+
 
 /* Decorative Circles */
 .design .circle {
