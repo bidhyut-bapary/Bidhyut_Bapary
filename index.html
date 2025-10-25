@@ -170,6 +170,27 @@
       </div>
     </div>
   </section>
+
+  <!-- WhatsApp Floating Icon -->
+<div class="whatsapp-icon" onclick="toggleForm()">
+  <img src="images/whatsapp.jpeg" alt="WhatsApp" />
+</div>
+
+<!-- Popup Form -->
+<div id="whatsappFormPopup" class="form-popup">
+  <div class="form-header">
+    <h3>👋 Hello!</h3>
+    <p>Enter the following information before<br>
+       starting the chat:</p>
+  </div>
+  <form action="https://formspree.io/f/xblzpzgj" method="POST" id="whatsappForm">
+    <input type="name" id="userName" placeholder="Enter the name" required />
+    <input type="name" id="userPhone" placeholder="01XXXXXXXXX" required />
+    <button type="submit">Continue</button>
+  </form>
+</div>
+
+  
   <hr class="bh" >
     <!-- footer -->
       <footer class="footer">
@@ -236,4 +257,5 @@
 <script src="JavaScript File/script.js"></script>
 </body>
 </html>
+
 
