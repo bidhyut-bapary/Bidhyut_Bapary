@@ -125,4 +125,23 @@ document.getElementById("downloadCV").addEventListener("click", function () {
   const fileUrl = "hhttps://drive.google.com/uc?export=download&id=1AbCdEfGhIjKlmNOP";
   window.open(fileUrl, "_blank");
 });
+// WhatsApp Icon → Popup Form → Redirect
+function toggleForm() {
+  const form = document.getElementById("whatsappFormPopup");
+  form.style.display = form.style.display === "block" ? "none" : "block";
+}
+
+document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("userName").value.trim();
+  const phone = document.getElementById("userPhone").value.trim();
+
+  const message = `হ্যালো, আমি ${name}, আমার নাম্বার ${phone}। আমি আপনার সাথে যোগাযোগ করতে চাই।`;
+  const encodedMessage = encodeURIComponent(message);
+
+  const whatsappURL = `https://wa.me/8801788568379?text=${encodedMessage}`;
+  window.open(whatsappURL, "_blank");
+});
+
 
